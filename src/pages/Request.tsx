@@ -1,7 +1,13 @@
 import React from 'react'
+import PageTitle from 'components/PageTitle'
 
 const Request = () => {
-  return <div>Request page</div>
+  return (
+    <div>
+      <PageTitle title="Request" />
+      <div>제작의뢰 페이지</div>
+    </div>
+  )
 }
 
 export default Request

@@ -4,6 +4,8 @@ import Mixer from 'res/mixer.jpg'
 import playlist from './songData'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
 import FlagIcon from '@mui/icons-material/Flag'
+import PageTitle from 'components/PageTitle'
+
 const LogoSongsContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -104,6 +106,7 @@ const LogoSongs = () => {
 
   return (
     <LogoSongsContainer>
+      <PageTitle title="LogoSongs" />
       <EstimateButton>견적버튼</EstimateButton>
       <BasicLayout>
         <MixerWrapper>
