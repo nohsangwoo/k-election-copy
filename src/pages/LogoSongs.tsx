@@ -7,7 +7,7 @@ const LogoSongsContainer = styled.div``
 const MixerWrapper = styled.div`
   display: flex;
   justify-content: center;
-  height: 400px;
+  height: 18rem;
   width: 100%;
   margin: 2rem 0;
 `
