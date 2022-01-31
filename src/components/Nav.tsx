@@ -40,7 +40,13 @@ const Nav = () => {
         navigate(`/logoSongs`)
         break
       case '3':
-        navigate(`/logoSongs`)
+        navigate(`/promotionVideo`)
+        break
+      case '4':
+        navigate(`/request`)
+        break
+      case '5':
+        navigate(`/inquiries`)
         break
       default:
         break
