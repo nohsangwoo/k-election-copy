@@ -7,6 +7,8 @@ import TabPanel from '@mui/lab/TabPanel'
 import styled from 'styled-components'
 // import { selectedNavItemState } from 'atoms/navAtom'
 // import { useRecoilState } from 'recoil'
+import { Link, useNavigate } from 'react-router-dom'
+
 const NavContainer = styled.div`
   display: flex;
   width: 100%;
@@ -27,9 +29,20 @@ const Nav = () => {
     '제작문의',
   ]
   const [value, setValue] = useState('1')
-
+  const navigate = useNavigate()
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue)
+    console.log('newValue?: ', newValue)
+    switch (newValue) {
+      case '1':
+        navigate(`/`)
+        break
+      case '2':
+        navigate(`/logoSongs`)
+        break
+      default:
+        break
+    }
   }
 
   return (
