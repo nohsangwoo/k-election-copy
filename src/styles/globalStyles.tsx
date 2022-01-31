@@ -9,7 +9,6 @@ export const GlobalStyles = createGlobalStyle`
     }
     * {
       box-sizing:border-box;
-      border: 4px solid red;
     }
     body {
       background-color:${props => props.theme.bgColor};
