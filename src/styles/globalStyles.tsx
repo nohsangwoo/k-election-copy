@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset';
+import { createGlobalStyle } from 'styled-components'
+import reset from 'styled-reset'
 // typescript 적용한 styled global theme 사용법
 
 export const GlobalStyles = createGlobalStyle`
@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     * {
       box-sizing:border-box;
+      border: 4px solid red;
     }
     body {
       background-color:${props => props.theme.bgColor};
@@ -23,4 +24,4 @@ export const GlobalStyles = createGlobalStyle`
     input{
       color:#000;
     }
-`;
+`

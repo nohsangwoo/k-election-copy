@@ -1,22 +1,15 @@
 import React from 'react'
-import App from 'App'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Nav from 'components/Nav'
 import Home from 'pages/Home'
+import Hello from 'pages/Hello'
 const Router = () => {
   return (
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route path="/" element={<App />}>
-          {/* <Route index element={<Home />} />
-      <Route path="teams" element={<Teams />}>
-        <Route path=":teamId" element={<Team />} />
-        <Route path="new" element={<NewTeamForm />} />
-        <Route index element={<LeagueStandings />} />
-      </Route> */}
-        </Route>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/home" element={<Hello />} />
       </Routes>
     </BrowserRouter>
   )
