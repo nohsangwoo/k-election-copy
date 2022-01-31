@@ -3,11 +3,11 @@ import Box from '@mui/material/Box'
 import Tab from '@mui/material/Tab'
 import TabContext from '@mui/lab/TabContext'
 import TabList from '@mui/lab/TabList'
-import TabPanel from '@mui/lab/TabPanel'
+// import TabPanel from '@mui/lab/TabPanel'
 import styled from 'styled-components'
 // import { selectedNavItemState } from 'atoms/navAtom'
 // import { useRecoilState } from 'recoil'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const NavContainer = styled.div`
   display: flex;
@@ -19,8 +19,6 @@ const NavContainer = styled.div`
 `
 
 const Nav = () => {
-  // const [selectedNavItem, setSelectedNavItem] =
-  //   useRecoilState(selectedNavItemState)
   const menuList = [
     '회사소개',
     '선거로고송',
@@ -28,6 +26,7 @@ const Nav = () => {
     '제작의뢰',
     '제작문의',
   ]
+
   const [value, setValue] = useState('1')
   const navigate = useNavigate()
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
@@ -38,6 +37,9 @@ const Nav = () => {
         navigate(`/`)
         break
       case '2':
+        navigate(`/logoSongs`)
+        break
+      case '3':
         navigate(`/logoSongs`)
         break
       default:
