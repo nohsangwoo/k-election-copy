@@ -73,6 +73,21 @@ const PlayTimeVisual = styled.div`
   opacity: 0.5;
 `
 
+const EstimateButton = styled.div`
+  position: fixed;
+  top: 30%;
+  right: 2%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 140px;
+  border: 1px solid black;
+  border-radius: 15px;
+`
+
 const LogoSongs = () => {
   const lefSideMenu = [
     '코로나 극복!',
@@ -89,6 +104,7 @@ const LogoSongs = () => {
 
   return (
     <LogoSongsContainer>
+      <EstimateButton>견적버튼</EstimateButton>
       <BasicLayout>
         <MixerWrapper>
           <MixerImg src={Mixer} alt="mixer" />
